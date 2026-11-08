@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Circle | COMINOVA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="circle-page">
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="img/Cominova Logo.png" alt="COMINOVA Logo" width="200">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#events">Events</a></li>
+                <li><a href="index.html#tickets">Tickets</a></li>
+                <li><a href="index.html#circle" class="active">Circle</a></li>
+                <li><a href="index.html#catalog">Catalog</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="index.html#tickets" class="btn-nav-ticket">Get Tickets</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="circle-registration-wrap">
+        <div class="container">
+            <div class="circle-registration-content">
+                <section class="registration-panel">
+                    <span class="registration-kicker">Circle Registration</span>
+                    <h1>Daftarkan booth kamu di COMINOVA 24.</h1>
+                    <p>
+                        Jadilah bagian dari pasar kreatif terbesar di Indonesia. Kami membuka kesempatan bagi
+                        doujinshi creator, illustrator, publisher, dan brand indie untuk hadir di pameran CN24.
+                    </p>
+
+                    <ul class="registration-list">
+                        <li><i class="fas fa-check-circle"></i><span>Slot booth terbatas untuk komunitas kreatif terbaik.</span></li>
+                        <li><i class="fas fa-check-circle"></i><span>Ribuan pengunjung potensial dari berbagai kalangan fandom.</span></li>
+                        <li><i class="fas fa-check-circle"></i><span>Penempatan booth sesuai kategori dan kebutuhan promosi.</span></li>
+                        <li><i class="fas fa-check-circle"></i><span>Support dari panitia untuk kebutuhan teknis dan operasional pameran.</span></li>
+                    </ul>
+
+                    <div class="registration-meta">
+                        <div class="meta-box">
+                            <i class="fas fa-calendar-check"></i>
+                            <strong>Pendaftaran</strong>
+                            <span>1 Apr - 13 Mei 2027</span>
+                        </div>
+                        <div class="meta-box">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <strong>Lokasi</strong>
+                            <span>ICE BSD</span>
+                        </div>
+                        <div class="meta-box">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <strong>Mulai</strong>
+                            <span>Rp 750.000</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="registration-form-panel">
+                    <form class="circle-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="circleName">Nama Circle</label>
+                                <input type="text" id="circleName" name="circleName" placeholder="Contoh: Sakura Atelier" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cpName">Nama Penanggung Jawab</label>
+                                <input type="text" id="cpName" name="cpName" placeholder="Nama lengkap" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Nomor WhatsApp</label>
+                                <input type="tel" id="phone" name="phone" placeholder="08xxxxxxxxxx" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="category">Kategori</label>
+                                <select id="category" name="category" required>
+                                    <option value="">Pilih kategori</option>
+                                    <option value="doujinshi">Doujinshi</option>
+                                    <option value="illustration">Illustration</option>
+                                    <option value="merchandise">Merchandise</option>
+                                    <option value="publisher">Publisher / Printing</option>
+                                    <option value="original">Original Brand</option>
+                                    <option value="other">Lainnya</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="booth">Ukuran Booth</label>
+                                <select id="booth" name="booth" required>
+                                    <option value="">Pilih ukuran</option>
+                                    <option value="standard">Standard Booth</option>
+                                    <option value="premium">Premium Booth</option>
+                                    <option value="double">Double Booth</option>
+                                    <option value="custom">Custom</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="portfolio">Link Portofolio / Sosial Media</label>
+                            <input type="url" id="portfolio" name="portfolio" placeholder="https://instagram.com/yourcircle">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Deskripsi Karya / Produk</label>
+                            <textarea id="description" name="description" placeholder="Jelaskan jenis karya, fandom, dan produk yang akan kamu tampilkan di booth..."></textarea>
+                        </div>
+
+                        <div class="form-submit-row">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-paper-plane"></i> Kirim Pendaftaran
+                            </button>
+                            <span class="form-note">Segera konfirmasi via email setelah data kami terima.</span>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Comic Trinova (Cominova). All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart" style="color: #ff6b6b;"></i> in Indonesia</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
