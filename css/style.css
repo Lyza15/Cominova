@@ -841,16 +841,6 @@ ul {
     transform: scale(1.05) translateY(-8px);
 }
 
-.ticket-card.premium {
-    background: linear-gradient(135deg, #132f38, #18363f);
-    border-color: rgba(126,190,201,0.35);
-}
-
-.ticket-card.premium:hover {
-    border-color: rgba(126,190,201,0.6);
-    box-shadow: 0 0 30px rgba(126,190,201,0.3);
-}
-
 .ticket-ribbon {
     position: absolute;
     top: 20px;
@@ -862,10 +852,6 @@ ul {
     font-weight: 800;
     letter-spacing: 2px;
     transform: rotate(45deg);
-}
-
-.ticket-card.premium .ticket-ribbon {
-    background: linear-gradient(135deg, var(--accent2), var(--accent));
 }
 
 .ticket-header h3 {
@@ -887,8 +873,8 @@ ul {
     font-size: 1rem;
     font-weight: 600;
     color: var(--text-muted);
-}
 
+}
 .amount {
     font-family: var(--font-primary);
     font-size: 2.8rem;
@@ -909,6 +895,15 @@ ul {
     background-clip: text;
 }
 
+.ticket-card.premium {
+    border-color: var(--primary);
+    transform: scale(1.05);
+    box-shadow: var(--shadow-glow);
+}
+
+.ticket-card.premium:hover {
+    transform: scale(1.05) translateY(-8px);
+}
 .ticket-per {
     font-size: 0.85rem;
     color: var(--text-muted);
@@ -1750,7 +1745,7 @@ ul {
     font-size: 0.8rem;
 }
 
-.registration-ta {
+.registration-meta {
     margin-top: 28px;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
